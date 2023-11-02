@@ -5,7 +5,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 module.exports = {
   entry: "./src/main.js",
   output: {
-    filename: "mandelbrot-widget.js",
+    filename: "mandelbrot-widget.min.js",
     path: path.resolve(__dirname, "./public/dist"),
   },
   plugins: [

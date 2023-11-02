@@ -144,7 +144,8 @@ class MandelbrotWidget extends HTMLElement {
       let workerCount = navigator.hardwareConcurrency;
       let workers = new Array(workerCount);
       for (let i = 0; i < workerCount; ++i) {
-        workers[i] = new Worker(new URL("./worker.js", import.meta.url), { name: i });
+        const workerUrl = new URL("./worker.js", import.meta.url);
+        workers[i] = new Worker(workerUrl, { name: i });
       }
 
       /* Generate a random color array */

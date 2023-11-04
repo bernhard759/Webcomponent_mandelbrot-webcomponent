@@ -565,7 +565,7 @@ class MandelbrotWidget extends HTMLElement {
       /* ZOOMING */
       /*##################################################*/
 
-      /* Zoom in when doubleclick on canvas */
+      /* Zoom in on canvas */
       canvas.addEventListener("wheel", (e) => {
         shadow.querySelector(".contextmenu").classList.remove("show");
 
